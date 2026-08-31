@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,7 +11,8 @@ import static java.lang.System.*;
 
 public class ExpressionSolver
 {
-	//add in instance variables
+	String origExpr;
+   String 
 
 	public ExpressionSolver(String s)
 	{
