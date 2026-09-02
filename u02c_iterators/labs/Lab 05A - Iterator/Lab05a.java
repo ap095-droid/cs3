@@ -14,5 +14,6 @@ public class Lab05a
 	public static void main ( String[] args )
 	{
 		//add test cases	
+      ArrayList<String> list = new ArrayList<String>
 	}
 }
