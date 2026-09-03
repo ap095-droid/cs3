@@ -23,7 +23,10 @@ class IteratorTest {
    
    /*** REMOVE ***/
    public static void remove(ArrayList<String> list, String toRemove) {
-       Iterator<String>
+       Iterator<String> = new Iterator(list);
+       for (String woa : list) {
+         if (num > 
+       
                                
    }
 
