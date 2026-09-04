@@ -8,10 +8,12 @@ import static java.lang.System.*;
 
 public class Lab04d
 {
-	public static void main( String args[] )
+	public static void main(String args[])
 	{
-		//make a new MadLib
-		
+ //make a new MadLib
+		MadLib test = new MadLib("story.dat");
+
+		out.println(test);
 		out.println("\n");
-	}
+  }
 }

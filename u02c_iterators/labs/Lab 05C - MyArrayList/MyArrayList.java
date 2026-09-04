@@ -14,18 +14,28 @@ public class MyArrayList<T> implements Iterable<T>
    }
 	
    @SuppressWarnings("unchecked")
-   public MyArrayList(int initSize) {
+   public MyArrayList(int intSize) {
+   
+   count = intisize;
+   list = (T[]) new Object[intSize];
    
    }
 	
    public void add(T value)
    {
+      if(count == list.length)
+         resizeArray();
+         
+      list[count++] = value;
    
    }
 	
    public void add(int index, T value)
    {
-   
+     T[] temp = list;
+     list = (T[] new Object[list.length + 1];
+       
+       
    }
 	
    public void clear()
@@ -75,7 +85,14 @@ public class MyArrayList<T> implements Iterable<T>
    @Override
    public String toString()
    {
-      return null;
+        if (size == 0) {
+         return "[]";
+         
+        String s = "["
+        int index = 0;
+        for ( ; index < size - 1; index++) ****\
+            s = s + list[index].toString() + ", ";
+        return s + list[index].toString() + "]";
    }
 	
    public Iterator<T> iterator() {

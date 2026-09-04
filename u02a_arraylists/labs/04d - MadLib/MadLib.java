@@ -5,48 +5,75 @@
 //Lab  -
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Collections;
 import static java.lang.System.*;
 
 public class MadLib
 {
 	//add in three ArrayList instance variables
-		//1 for nouns, 1 for adjectives, and 1 for verbs
-	
-	public MadLib()
+	private ArrayList<String> nouns;
+	private ArrayList<String> adjectives;
+	private ArrayList<String> verbs;
+
+	private String story = "";
+
+	public MadLib()  
 	{
+		nouns = new ArrayList<String>();
+		adjectives = new ArrayList<String>();
+		verbs = new ArrayList<String>();
 	}
 
 	public MadLib(String fileName)
 	{
-		//load stuff
-		
-		try{
+		this();
+
+		loadNouns();
+		loadVerbs();
+		loadAdjectives();
+
+		try
+		{
 			Scanner file = new Scanner(new File(fileName));
-			
+
+			while(file.hasNext())
+			{
+				story += file.next() + " ";
+			}
 		}
 		catch(Exception e)
 		{
 			out.println("Houston we have a problem!");
 		}
-		
 	}
 
 	public void loadNouns()
 	{
-		try{		
+		try
+		{
+			Scanner file = new Scanner(new File("nouns.dat"));
+
+			while(file.hasNext())
+			{
+				nouns.add(file.next());
+			}
 		}
 		catch(Exception e)
 		{
-		}			
+		}
 	}
-	
+
 	public void loadVerbs()
 	{
-		try{	
+		try
+		{
+			Scanner file = new Scanner(new File("verbs.dat"));
+
+			while(file.hasNext())
+			{
+				verbs.add(file.next());
+			}
 		}
 		catch(Exception e)
 		{
@@ -55,7 +82,14 @@ public class MadLib
 
 	public void loadAdjectives()
 	{
-		try{	
+		try
+		{
+			Scanner file = new Scanner(new File("adjectives.dat"));
+
+			while(file.hasNext())
+			{
+				adjectives.add(file.next());
+			}
 		}
 		catch(Exception e)
 		{
@@ -63,22 +97,41 @@ public class MadLib
 	}
 
 	public String getRandomVerb()
-	{	
-		return "";
+	{
+		int spot = (int)(Math.random() * verbs.size());
+		return verbs.get(spot);
 	}
-	
+
 	public String getRandomNoun()
-	{		
-		return "";
+	{
+		int spot = (int)(Math.random() * nouns.size());
+		return nouns.get(spot);
 	}
-	
+
 	public String getRandomAdjective()
-	{		
-		return "";
-	}		
+	{
+		int spot = (int)(Math.random() * adjectives.size());
+		return adjectives.get(spot);
+	}
 
 	public String toString()
 	{
-	   return "\n\n\n";
+		String output = story;
+
+		output = output.replaceAll("NOUN", getRandomNoun());
+		output = output.replaceAll("VERB", getRandomVerb());
+		output = output.replaceAll("ADJECTIVE", getRandomAdjective());
+
+
+		while(output.contains("NOUN"))
+			output = output.replaceFirst("NOUN", getRandomNoun());
+
+		while(output.contains("VERB"))
+			output = output.replaceFirst("VERB", getRandomVerb());
+
+		while(output.contains("ADJECTIVE"))
+			output = output.replaceFirst("ADJECTIVE", getRandomAdjective());
+
+		return output;
 	}
 }
