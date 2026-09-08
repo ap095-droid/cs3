@@ -10,10 +10,10 @@ public class Lab04d
 {
 	public static void main(String args[])
 	{
- //make a new MadLib
+		
 		MadLib test = new MadLib("story.dat");
 
 		out.println(test);
 		out.println("\n");
-  }
+	}
 }
