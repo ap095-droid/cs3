@@ -18,7 +18,7 @@ public class MadLib
 
 	private String story = "";
 
-	public MadLib()  
+	public MadLib()
 	{
 		nouns = new ArrayList<String>();
 		adjectives = new ArrayList<String>();
@@ -41,6 +41,8 @@ public class MadLib
 			{
 				story += file.next() + " ";
 			}
+
+			story = story.trim();
 		}
 		catch(Exception e)
 		{
@@ -118,19 +120,14 @@ public class MadLib
 	{
 		String output = story;
 
-		output = output.replaceAll("NOUN", getRandomNoun());
-		output = output.replaceAll("VERB", getRandomVerb());
-		output = output.replaceAll("ADJECTIVE", getRandomAdjective());
+		while(output.contains("#"))
+			output = output.replaceFirst("#", getRandomNoun());
 
+		while(output.contains("@"))
+			output = output.replaceFirst("@", getRandomVerb());
 
-		while(output.contains("NOUN"))
-			output = output.replaceFirst("NOUN", getRandomNoun());
-
-		while(output.contains("VERB"))
-			output = output.replaceFirst("VERB", getRandomVerb());
-
-		while(output.contains("ADJECTIVE"))
-			output = output.replaceFirst("ADJECTIVE", getRandomAdjective());
+		while(output.contains("&"))
+			output = output.replaceFirst("&", getRandomAdjective());
 
 		return output;
 	}
