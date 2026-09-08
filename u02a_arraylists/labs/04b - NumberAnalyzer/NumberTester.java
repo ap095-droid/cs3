@@ -10,18 +10,24 @@ public class NumberTester
 {
 	public static void main(String[] args)
 	{
-		//add test cases
-		
-		
-		
-		
-		
+		Number test = new Number(7);
+		out.println(test);
+
+		out.println();
+
+		test.setNumber(496);
+		out.println(test);
+
 		//add more test cases
-		
-		
-		
-		
-		
-		
+
+		out.println();
+
+		test.setNumber(6);
+		out.println(test);
+
+		out.println();
+
+		test.setNumber(12);
+		out.println(test);
 	}
 }
