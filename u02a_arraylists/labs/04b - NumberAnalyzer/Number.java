@@ -10,44 +10,46 @@ public class Number
 
 	public Number()
 	{
-
-
+		number = 0;
 	}
 
 	public Number(int num)
 	{
-
-
+		number = num;
 	}
 	
 	public void setNumber(int num)
 	{
-
-
+		number = num;
 	}
 	
 	public int getNumber()
 	{
-		return 0;
+		return number;
 	}	
 	
 	public boolean isOdd()
 	{
-		return false;
+		return number % 2 == 1;
 	}
 	
 	public boolean isPerfect()
 	{
-		int total=0;
+		int total = 0;
 
+		for(int i = 1; i < number; i++)
+		{
+			if(number % i == 0)
+				total += i;
+		}
 
-
-
-		return (number==total);
+		return (number == total);
 	}	
 	
 	public String toString( )
 	{
-		return "";
+		return "" + number
+			+ "\n" + number + " isOdd == " + isOdd()
+			+ "\n" + number + " isPerfect == " + isPerfect();
 	}
 }
