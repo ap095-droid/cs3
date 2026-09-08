@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //recursion example 7 with strings
@@ -21,3 +21,4 @@ public class RecursionSeven
 		out.println(test.recur("zebra"));
 	}
 }
+

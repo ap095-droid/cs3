@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -92,3 +92,4 @@ public abstract class Cell implements Locatable
 		return getX() + " " + getY() + " " + getWidth() + " " + getHeight();
 	}
 }
+

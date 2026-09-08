@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //Recursion example 5
@@ -21,3 +21,4 @@ public class RecursionFive
     	out.println(test.fun(4,3));
 	}
 }
+

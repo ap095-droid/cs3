@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //Recursion example 3
@@ -19,4 +19,6 @@ public class RecursionThree
       test.run(1);
    }
 }
+
+
 

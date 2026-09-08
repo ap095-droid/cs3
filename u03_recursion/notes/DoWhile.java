@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //do while loop example
@@ -21,3 +21,4 @@ public class DoWhile
       test.run( );
    }
 }
+
