@@ -23,15 +23,23 @@ public class AtCounter
 									{'-','@','@','@','@','@','-','@','@','@'}};
 	}
 
-	public void countAts(int r, int c) {
+	public int countAts(int r, int c) {
 
 		//add in recursive code to count up the # of @s connected
 		//start checking at spot [r,c]
       
       char[][] mat = atMat;
-      if((r >= 0 && r < mat.length) && (c >= 0 && c < mat[r].length)) && mat[r][c] == '@') {
+      if(((r >= 0 && r < atMat.length) && (c >= 0 && c < atMat[r].length)) && atmat[r][c] == '@') {
       
-         atCount + 
+         atCount++;
+         atMat[r][c] = ' ';
+         countAts(r-1, c);
+         countAts(r+1, c);
+         countAts(r-1, c);
+         countAts(r, c-1);
+         countAts(r, c+1);
+
+         
 
 
 
@@ -49,10 +57,12 @@ public class AtCounter
 
 
 	}
+ }
 
-	public String toString() {
+	/*public String toString() {
 		String output="";
 		output+=atCount+" @s connected.";
 		return output;
 	}
 }
+*/
