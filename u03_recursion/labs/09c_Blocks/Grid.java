@@ -24,10 +24,12 @@ public class Grid
 	
 	public void setGrid(int rows, int cols, String[] vals)
 	{
-      int size = vals.length-1;
-      for (int r = 0; r < grid.length; r++;) {
-         for (int c = 0; c < grid[r].length; c++) {
-            if (
+      int max = Integer.MIN_VALUE;
+      int count = 0;
+      String[][] gridFaker = grid;
+      for (int r = 0; r < gridFaker.length; r++;) {
+         for (int c = 0; c < gridFaker[r].length; c++) {
+            if (gridFaker[r][c] =
             
 	}
 
@@ -48,6 +50,9 @@ public class Grid
 	public String toString()
 	{
 		String output="";
+      for (int r = 0; r < grid.length; r++;) {
+         for (int c = 0; c < grid.le
+      
 		return output;
 	}
 }
