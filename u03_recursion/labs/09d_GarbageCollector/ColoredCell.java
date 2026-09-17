@@ -22,13 +22,19 @@ public class ColoredCell extends Cell
 
 	public ColoredCell(boolean fill)
 	{
-
+     filled = fill;
 
 	}
 
 	public ColoredCell(int x, int y, boolean fill)
 	{
-
+      setX(x);
+      setY(y);
+      setWidth(w);
+      setHeight(h);
+      filled = fill;
+      
+ 
 
 	}
 
