@@ -19,9 +19,9 @@ public class UnitCircle
    //
    // Signs are listed in quadrant order, with their location in the array
    // corresponding to the quadrant number:
-   public static final int[]    sineSigns = {0,  1, 1, 1, 1};
-   public static final int[]  cosineSigns = {0,  1, 1, 1, 1};
-   public static final int[] tangentSigns = {0,  1, 1, 1, 1};
+   public static final int[]    sineSigns = {0,  1, 1, -1, -1};
+   public static final int[]  cosineSigns = {0,  1, -1, -1, 1};
+   public static final int[] tangentSigns = {0,  1, -1, 1, -1};
 
    // The lists:
    public static final ArrayList<Integer> anglesInDegrees = new ArrayList<>();
