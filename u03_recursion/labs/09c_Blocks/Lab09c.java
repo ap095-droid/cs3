@@ -13,6 +13,11 @@ public class Lab09c
 {
 	public static void main( String args[] ) throws IOException
 	{
+       String[] letters = {"A", "E", "I", "O", "U"};
+       Grid test = new Grid(6, 6, letters);
+       out.println(test);
+       out.println("A count == " + test.findMax("A"));
+   
 	}
 }
 
