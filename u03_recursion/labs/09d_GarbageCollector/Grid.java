@@ -19,7 +19,7 @@ public class Grid
 
 	public Grid(int rows, int cols)
 	{
-	
+	    grid = new Cell[0][0];
 	
 	}
 
@@ -30,7 +30,7 @@ public class Grid
 
 	public void setSpot(int row,int col, Cell val)
 	{
-	
+	  grid[row][col] = val;
 	
 	}
 	
@@ -62,7 +62,8 @@ public class Grid
 				Cell spot = grid[r][c];
 				
 				//if the current spot is not null
-
+            if(spot != null) {
+               full = true;
 
 				//else
 

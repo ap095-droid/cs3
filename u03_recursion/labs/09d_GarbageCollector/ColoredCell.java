@@ -28,10 +28,8 @@ public class ColoredCell extends Cell
 
 	public ColoredCell(int x, int y, boolean fill)
 	{
-      setX(x);
-      setY(y);
-      setWidth(w);
-      setHeight(h);
+     setX(x);
+     setY(y);
       filled = fill;
       
  
@@ -41,18 +39,30 @@ public class ColoredCell extends Cell
 	public ColoredCell(int x, int y, int w, int h, boolean fill)
 	{
 
+      setX(x);
+      setY(y);
+      setWidth(w);
+      setHeight(h);
+      filled = fill;
+      
 
 	}
 
 	public ColoredCell(int x, int y, int w, int h, boolean fill, Color c)
 	{
+      setX(x);
+      setY(y);
+      setWidth(w);
+      setHeight(h);
+      filled = fill;
+      setColor(c);
 
 
 	}
 
 	public void setFilled(boolean fill)
 	{
-
+      filled = fill;
 	}
 
 	public void setColor(Color c)

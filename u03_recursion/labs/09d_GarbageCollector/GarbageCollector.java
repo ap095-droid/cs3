@@ -32,6 +32,7 @@ public class GarbageCollector extends JPanel implements MouseListener
 					trashMap.setSpot(r,c,new ColoredCell(r*rows+10, c*cols+10, 10, 10, true, Color.ORANGE));
 				//else
 					//load in a different Cell
+             
 			}
 		}
 
