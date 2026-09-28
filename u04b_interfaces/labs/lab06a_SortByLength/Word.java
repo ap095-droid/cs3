@@ -1,1 +1,46 @@
-aa´@ÁN@Ã–”—¤£…™@âƒ‰…•ƒ…@@`@@¦¦¦K—“¤¢ƒ–”—¢ƒ‰Kƒ–”aaÕ”…@`aaÄ£…@`aaÃ“¢¢@`aaÓ‚@@`‰”—–™£@¢££‰ƒ@‘¥K“•‡Kâ¨¢£…”K\^—¤‚“‰ƒ@ƒ“¢¢@æ–™„@‰”—“…”…•£¢@Ã–”—™‚“…Læ–™„nÀaa„„@•@‰•¢£•ƒ…@¥™‰‚“…@•„@@ƒ–•¢£™¤ƒ£–™@@@@@@â£™‰•‡@¦–™„@~@^@@@—¤‚“‰ƒ@æ–™„Mâ£™‰•‡@¦–™„]@@À@@@@@@@@Ð@@@@aa„„@@ƒ–”—™…ã–@@@@—¤‚“‰ƒ@‰•£@ƒ–”—™…ã–Mæ–™„@–£ˆ…™]@@À@@@@@@@@@@‰†M£ˆ‰¢K¦–™„K“…•‡£ˆM]@n@–£ˆ…™K¦–™„K“…•‡£ˆM]]@@@@@@@@™…£¤™•@ñ^@@@@@‰†M£ˆ‰¢K¦–™„K“…•‡£ˆM]@L@–£ˆ…™K¦–™„K“…•‡£ˆM]]@@@@@@@@™…£¤™•@`ñ^@@@@@™…£¤™•@£ˆ‰¢K¦–™„Kƒ–”—™…ã–M–£ˆ…™K¦–™„]^@@@@@@@Ð@@@@aa„„@@£–â£™‰•‡@@@@@@—¤‚“‰ƒ@â£™‰•‡@£–â£™‰•‡M]@@@À@@@@@@â£™‰•‡@–¤£—¤£@~@^@@@@@@™…£¤™•@–¤£—¤£^@@@@@@@@@@@@Ð@@@@Ð
+//Â© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+import static java.lang.System.*;
+
+public class Word implements Comparable<Word>
+{
+	//add an instance variable and a constructor
+
+   
+   String word = "";
+   public Word(String word)
+  {
+  
+  
+  
+  }
+  
+  //add a compareTo
+  
+  public int compareTo(Word other)
+  {
+     
+     if(this.word.length() > other.word.length())
+        return 1;
+     if(this.word.length() < other.word.length())
+        return -1;
+     return this.word.compareTo(other.word);
+     
+  }
+  
+  	//add a toString
+   
+   public String toString()
+   {
+      String output = "";
+      return output;
+   
+   
+   
+   }
+   
+ }
