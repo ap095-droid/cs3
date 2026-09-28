@@ -1,20 +1,1 @@
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -
-//Date -
-//Class -
-//Lab  -
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.Collections;
-import static java.lang.System.*;
-
-public class Lab06a
-{
-	public static void main( String args[] ) throws IOException
-	{
-		//add test cases
-	}
-}
+aa´@ÁN@Ã–”—¤£…™@âƒ‰…•ƒ…@@`@@¦¦¦K—“¤¢ƒ–”—¢ƒ‰Kƒ–”aaÕ”…@`aaÄ£…@`aaÃ“¢¢@`aaÓ‚@@`‰”—–™£@‘¥K‰–KÆ‰“…^‰”—–™£@‘¥K‰–KÉÖÅ§ƒ…—£‰–•^‰”—–™£@‘¥K¤£‰“KÁ™™¨Ó‰¢£^‰”—–™£@‘¥K¤£‰“Kâƒ••…™^‰”—–™£@‘¥K¤£‰“KÃ–““…ƒ£‰–•¢^‰”—–™£@¢££‰ƒ@‘¥K“•‡Kâ¨¢£…”K\^—¤‚“‰ƒ@ƒ“¢¢@Ó‚ğöC—¤‚“‰ƒ@¢££‰ƒ@¥–‰„@”‰•M@â£™‰•‡@™‡¢µŸ@]@£ˆ™–¦¢@ÉÖÅ§ƒ…—£‰–•Caa„„@£…¢£@ƒ¢…¢@@@@@@@@@@@@âƒ••…™@†‰“…@~@•…¦@âƒ••…™M•…¦@Æ‰“…GG
