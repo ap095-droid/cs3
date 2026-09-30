@@ -16,7 +16,7 @@ public class UniquesDupsRunner
 		out.println("Uniques : " + UniquesDupes.getUniques(list));
 		out.println("Dupes : " + UniquesDupes.getDupes(list) + "\n\n");
 		
-		//more test cases
+		//more test cases hehehe
 				
 	}
 }
