@@ -16,14 +16,19 @@ public class UniquesDupes
 	{
 		Set<String> uniques = new TreeSet<String>();
 
-		//add code
+		for(String word : input.split(" "));
+		{
+			
+			uniques.add(word);
+
+		}
 
 		return uniques;
 	}
 
 	public static Set<String> getDupes(String input)
 	{
-		//add code
+		
 		
 		return null;
 	}
