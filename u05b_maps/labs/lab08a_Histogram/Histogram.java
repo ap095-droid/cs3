@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -18,6 +18,14 @@ public class Histogram
 
 	public Histogram(String sent)
 	{
+		histogram = new TreeMap<String,Integer>();
+		//char[] hjsjh = sent.toCharArray();
+		for (char c : sent.toCharArray()) {
+			if (! histogram.containsKey(String.valueOf(c))+1);
+				histogram.put(String.valueOf(c),1;
+			else
+				histogram.put(String.valueOf(c),histogram.get(String.valueOf(c))+1);
+		}
 	}
 	
 	public void setSentence()
@@ -28,6 +36,11 @@ public class Histogram
 	{
 		String output="";
 		String allStars="";
+        for (int i = 0; i < histogram.size(); i++) {
+			
+
+
+		
 		return output+"\n\n";
 	}
 }
