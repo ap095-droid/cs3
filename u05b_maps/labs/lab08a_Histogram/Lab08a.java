@@ -13,7 +13,8 @@ public class Lab08a
 {
 	public static void main( String args[] ) throws IOException
 	{
-		Histogram test = new Histogram(
+		Histogram test = new Histogram("a b c d e f g h i a c d e g h i h k");
+		out.println(test);
 		
 		
 		
