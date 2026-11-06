@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -17,7 +17,8 @@ public class Relatives
 	public Relatives()
 	{
 
-
+      map = new TreeMap<String,Set<String>> map;
+		
 
 	}
 
@@ -25,20 +26,19 @@ public class Relatives
 	{
 		String[] personRelative = line.split(" ");
 
+		if (map.containsKey(k)) {
+			String rel = map.get(personRelative[0]))
 
-
-
-
-
-
-
-
+	}
+        Set<String> relative = new Set<>();
+		relative.add(personRelative[1]);
 
 	}
 
 
 	public String getRelatives(String person)
 	{
+		map.put(person, map.get(person));
 		return "";
 	}
 
