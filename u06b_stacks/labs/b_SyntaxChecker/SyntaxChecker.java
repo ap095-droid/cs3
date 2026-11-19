@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -21,10 +21,28 @@ public class SyntaxChecker
 	
 	public void setExpression(String s)
 	{
+		exp = s;
 	}
 
 	public boolean checkExpression()
 	{
+		Stack<String> symbols = new Stack<>();
+
+		String[] words = exp.split(" ");
+
+		for (String symbol : words) {
+			symbols.push(symbol);
+		}
+
+		Map<String, String> map = new TreeMap<String,String>();
+		map.put("[ , ]");
+		map.put("[ , ]");
+		map.put("[ , ]");
+		map.put("[ , ]");
+		map.put("[ , ]");
+		map.put("[ , ]");
+		out.println("map = " + map);
+		
       //You can change this to a stack of Strings if you prefer.
    	Stack<Character> symbols;     
    
