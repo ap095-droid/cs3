@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,6 +11,8 @@ public class Lab13b
 {
 	public static void main ( String[] args )
 	{
-		//add test cases		
+		SyntaxChecker test = new SyntaxChecker("[ {   }  }")		
+	    out.println(test);
+		out.println(test.checkExpression);
 	}
 }
