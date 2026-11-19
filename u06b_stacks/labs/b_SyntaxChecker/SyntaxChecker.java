@@ -42,6 +42,12 @@ public class SyntaxChecker
 		map.put("[ , ]");
 		map.put("[ , ]");
 		out.println("map = " + map);
+		out.println("symbols = " + symbols);
+
+
+		boolean what = false;
+
+		for (int j = 0; j < values.length; 
 		
       //You can change this to a stack of Strings if you prefer.
    	Stack<Character> symbols;     
